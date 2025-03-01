@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Custom Styles */
+        section {
+            padding: 4rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+        }
+
+        .video-container video {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .mission-statement {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .grid-item img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            border-radius: 4px;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+        }
+
+        /* Enhanced Bootstrap Components */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4">Welcome to My Portfolio</h1>
+                    <p class="lead">Exploring the Future of Technology</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-container ratio ratio-16x9">
+                        <video controls>
+                            <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/QoIRX37VZpo?si=yaWstBZL5DgTglDq" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2 class="mb-4">About Us</h2>
+            <h5>a passionate Data Scientist with a knack for turning raw data into actionable insights. I specialize in leveraging cutting-edge tools and technologies to solve complex problems and drive data-driven decision-making. Whether it's building predictive models, creating stunning visualizations, or uncovering hidden patterns in data, I thrive on transforming data into value.</h5>
+            <div class="mission-statement mb-5">
+                <h3> Mission</h3>
+                <p>My mission is to use data science to solve real-world problems and empower individuals and organizations to make smarter, data-driven decisions. I believe that data holds the key to innovation, and I'm committed to unlocking its potential through advanced analytics, machine learning, and artificial intelligence</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-hover">
+                      
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                
+                                <td>Tensor Flow</td>
+                                
+                                <td>SQL</td>
+                                
+                                <td>Artificial Intelligence</td>
+                             
+                            </tr>
+                            <!-- Add more rows -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Why Choose Me?</h5>
+                            <p class="card-text">Why Work With Me?
+                                Proven Expertise
+                                With [X years] of experience in data science, I’ve worked on a wide range of projects, from predictive analytics to natural language processing. My work has helped businesses optimize operations, improve customer experiences, and drive growth.
+                                
+                                Hands-On Problem Solver
+                                I don’t just analyze data—I solve problems. Whether it’s building a machine learning model from scratch or cleaning messy datasets, I take a hands-on approach to deliver results.
+                                
+                                Cutting-Edge Skills
+                                I’m proficient in the latest data science tools and technologies, including Python, R, TensorFlow, PyTorch, SQL, and Tableau. I’m always learning and staying updated with industry trends.
+                                
+                                Clear Communication
+                                I excel at translating complex data insights into clear, actionable recommendations for stakeholders. My ability to communicate effectively ensures that data-driven strategies are understood and implemented.
+                                
+                                Passion for Innovation
+                                I’m not just a data scientist—I’m an innovator. I love exploring new techniques, experimenting with emerging technologies, and pushing the boundaries of what’s possible with data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-dark text-white">
+        <div class="container">
+            <h2 class="mb-4">Tech Gallery</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="infographic1.jpg" class="img-fluid" alt="Tech Infographic">
+                </div>
+                <!-- Add more gallery items -->
+            </div>
+            <div class="mt-5">
+                <audio controls class="w-100">
+                    <source src="podcast-episode.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="mb-4">Contact Us</h2>
+            <form class="contact-form">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Subscribe to Newsletter</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Tech Insights Hub</h5>
+                    <p>Your gateway to emerging technologies</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Follow us on social media</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3">Facebook</a>
+                        <a href="#" class="text-white me-3">Twitter</a>
+                        <a href="#" class="text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
